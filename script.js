@@ -31,19 +31,23 @@ let listings = [
 
 let selectedForCompare = [];
 
-// TEMPORARILY REMOVE fetching JSON for now
-// fetch('listings.json')
-//   .then(res => res.json())
-//   .then(data => {
-//     listings = listings.concat(data); // keep Airbnb + add JSON listings
-//     displayListings(listings);
-//   })
-//   .catch(err => {
-//     console.error("Failed to load listings.json", err);
-//     displayListings(listings); // show Airbnb only if JSON fails
-//   });
+// -----------------------------
+// Fetch additional listings (houses, hostels, schools) from JSON
+// -----------------------------
+fetch('listings.json')
+  .then(res => res.json())
+  .then(data => {
+    listings = listings.concat(data); // combine Airbnb + JSON listings
+    displayListings(listings);        // display all on page load
+  })
+  .catch(err => {
+    console.error("Failed to load listings.json", err);
+    displayListings(listings); // if JSON fails, show Airbnb only
+  });
 
-// Display listings in the main container
+// -----------------------------
+// Display function
+// -----------------------------
 function displayListings(list) {
   const container = document.getElementById('listings');
   container.innerHTML = '';
@@ -62,7 +66,9 @@ function displayListings(list) {
   document.getElementById('compareBtn').style.display = selectedForCompare.length > 0 ? 'block' : 'none';
 }
 
+// -----------------------------
 // Compare listings
+// -----------------------------
 function toggleCompare(index, checkbox) {
   if (checkbox.checked) selectedForCompare.push(listings[index]);
   else selectedForCompare = selectedForCompare.filter(item => item !== listings[index]);
@@ -85,13 +91,17 @@ function compareListings() {
   container.innerHTML += table;
 }
 
-// Show specific category (houses, hostels, airbnb, etc.)
+// -----------------------------
+// Show category
+// -----------------------------
 function showCategory(cat) {
   if (cat === 'all') displayListings(listings);
   else displayListings(listings.filter(l => l.category === cat));
 }
 
+// -----------------------------
 // Search listings
+// -----------------------------
 function searchListings() {
   const term = document.getElementById('searchInput').value.toLowerCase();
   displayListings(listings.filter(l => 
@@ -101,12 +111,16 @@ function searchListings() {
   ));
 }
 
+// -----------------------------
 // Contact form submission
+// -----------------------------
 function submitContactForm(e) {
   e.preventDefault();
   alert('Thank you! We will get back to you soon.');
   document.getElementById('contactForm').reset();
 }
 
-// DISPLAY ALL LISTINGS ON PAGE LOAD
+// -----------------------------
+// Display all listings initially
+// -----------------------------
 displayListings(listings);
