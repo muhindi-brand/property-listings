@@ -31,4 +31,36 @@
     "price": 25000,
     "image": "images/shop1.jpg"
   }
+{
+  "title": "Joyland School",
+  "description": "Playgroup - Grade 6",
+  "category": "schools",
+  "subcategory": "",
+  "price": 0,
+  "image": "images/school1.jpg"
+},
+{
+  "title": "Smart Talents",
+  "description": "Playgroup - Grade 9",
+  "category": "schools",
+  "subcategory": "",
+  "price": 0,
+  "image": "images/school2.jpg"
+},
+{
+  "title": "Kuraiha Primary",
+  "description": "Playgroup - Grade 9",
+  "category": "schools",
+  "subcategory": "",
+  "price": 0,
+  "image": "images/school3.jpg"
+},
+{
+  "title": "Lamad Light Academy",
+  "description": "Playgroup - Grade 9",
+  "category": "schools",
+  "subcategory": "",
+  "price": 0,
+  "image": "images/school4.jpg"
+}
 ]
