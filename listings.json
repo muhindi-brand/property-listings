@@ -1,22 +1,22 @@
 [
   {
-    "title": "Single Room in Westlands",
-    "description": "Cozy single room, close to transport",
+    "title": "Single Room,doublerooms,bed-sitters,one bedroom rentals in Witeithie,juja thika",
+    "description": "Cozy single,double room bed sitters,one and two bedroom, close to transport",
     "category": "houses",
     "subcategory": "single room",
-    "price": 8000,
+    "price": 3000,5000,8500,
     "image": "images/house1.jpg"
   },
   {
-    "title": "Ladies Hostel in Nairobi CBD",
+    "title": "Ladies and mens Hostel in witeithie thika and juja",
     "description": "Safe hostel for ladies, fully furnished",
     "category": "hostels",
     "subcategory": "ladies",
-    "price": 5000,
+    "price": 5000 per month,
     "image": "images/hostel1.jpg"
   },
   {
-    "title": "Greenwood High School",
+    "title": "Rise and shine academy",
     "description": "Top-rated school in the area",
     "category": "schools",
     "subcategory": "",
