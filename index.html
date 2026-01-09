@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Listings in Nairobi | Houses, Hostels, Schools, Shops</title>
+  <meta name="description" content="Find houses, hostels, schools, and business shops for rent in Nairobi. Compare prices and contact property owners instantly.">
+  <meta name="keywords" content="houses for rent Nairobi, hostels Nairobi, schools Nairobi, business shops Nairobi, property listings">
+  <meta name="author" content="Muhindi Brand">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Property Listings Nairobi</h1>
+    <nav>
+      <button onclick="showCategory('houses')">Houses</button>
+      <button onclick="showCategory('hostels')">Hostels</button>
+      <button onclick="showCategory('schools')">Schools</button>
+      <button onclick="showCategory('business_shops')">Shops</button>
+      <button onclick="showCategory('all')">All</button>
+    </nav>
+    <input type="text" id="searchInput" placeholder="Search listings..." onkeyup="searchListings()">
+  </header>
+
+  <main>
+    <div id="listings"></div>
+    <button id="compareBtn" onclick="compareListings()" style="display:none;">Compare Selected</button>
+    <div id="comparison"></div>
+  </main>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Name: Muhindi Brand</p>
+    <p>Phone: +2547XXXXXXXX</p>
+    <p>Email: info@example.com</p>
+
+    <h3>Send us a message:</h3>
+    <form id="contactForm" onsubmit="submitContactForm(event)">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- WhatsApp Chat -->
+  <a href="https://wa.me/2547XXXXXXXX" target="_blank" id="whatsappChat">
+    <img src="images/whatsapp.png" alt="Chat on WhatsApp" width="40">
+    Chat with us on WhatsApp
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

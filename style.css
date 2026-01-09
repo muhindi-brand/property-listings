@@ -1,0 +1,14 @@
+body { font-family: Arial, sans-serif; margin:20px; }
+header { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+nav button { margin:5px; padding:5px 10px; }
+#listings { display:flex; flex-wrap:wrap; gap:15px; margin-top:20px; }
+.listing-card { border:1px solid #ccc; padding:10px; width:250px; }
+#comparison { margin-top:20px; }
+#contact { margin-top:40px; border-top:2px solid #ccc; padding-top:20px; }
+#whatsappChat {
+  position: fixed; bottom: 20px; right: 20px; background-color: #25D366; 
+  color: white; padding:10px 15px; border-radius:50px; font-weight:bold; 
+  text-decoration:none; display:flex; align-items:center; gap:10px; 
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+#whatsappChat img { border-radius:50%; }

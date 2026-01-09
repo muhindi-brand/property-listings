@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Single Room in Westlands",
+    "description": "Cozy single room, close to transport",
+    "category": "houses",
+    "subcategory": "single room",
+    "price": 8000,
+    "image": "images/house1.jpg"
+  },
+  {
+    "title": "Ladies Hostel in Nairobi CBD",
+    "description": "Safe hostel for ladies, fully furnished",
+    "category": "hostels",
+    "subcategory": "ladies",
+    "price": 5000,
+    "image": "images/hostel1.jpg"
+  },
+  {
+    "title": "Greenwood High School",
+    "description": "Top-rated school in the area",
+    "category": "schools",
+    "subcategory": "",
+    "price": 0,
+    "image": "images/school1.jpg"
+  },
+  {
+    "title": "Sunny Supermarket Shop",
+    "description": "Vacant shop available for rent",
+    "category": "business_shops",
+    "subcategory": "supermarkets",
+    "price": 25000,
+    "image": "images/shop1.jpg"
+  }
+]
