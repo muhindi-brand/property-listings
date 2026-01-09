@@ -1,6 +1,5 @@
-// Listings array
+// Listings array - include all 3 Airbnb listings directly
 let listings = [
-  // Example Airbnb listing
   {
     title: "Furnished Airbnb Studio – Witeithie",
     category: "airbnb",
@@ -9,22 +8,40 @@ let listings = [
     description: "Fully furnished studio with Wi-Fi, hot shower, and secure parking. Ideal for short stays.",
     image: "images/airbnb1.jpg",
     contact: "+2547XXXXXXXX"
+  },
+  {
+    title: "Airbnb 1-Bedroom Apartment – Thika Town",
+    category: "airbnb",
+    location: "Thika Town",
+    price: "3,000 per night",
+    description: "Spacious 1-bedroom apartment with balcony, Wi-Fi, and parking. Ideal for short stays.",
+    image: "images/airbnb2.jpg",
+    contact: "+2547XXXXXXXX"
+  },
+  {
+    title: "Airbnb Studio – Juja",
+    category: "airbnb",
+    location: "Juja",
+    price: "2,000 per night",
+    description: "Cozy studio with all amenities included. Ideal for short stays.",
+    image: "images/airbnb3.jpg",
+    contact: "+2547XXXXXXXX"
   }
 ];
 
 let selectedForCompare = [];
 
-// Fetch additional listings from JSON (houses, hostels, etc.)
-fetch('listings.json')
-  .then(res => res.json())
-  .then(data => {
-    listings = listings.concat(data); // keep Airbnb + add JSON listings
-    displayListings(listings);
-  })
-  .catch(err => {
-    console.error("Failed to load listings.json", err);
-    displayListings(listings); // show Airbnb only if JSON fails
-  });
+// TEMPORARILY REMOVE fetching JSON for now
+// fetch('listings.json')
+//   .then(res => res.json())
+//   .then(data => {
+//     listings = listings.concat(data); // keep Airbnb + add JSON listings
+//     displayListings(listings);
+//   })
+//   .catch(err => {
+//     console.error("Failed to load listings.json", err);
+//     displayListings(listings); // show Airbnb only if JSON fails
+//   });
 
 // Display listings in the main container
 function displayListings(list) {
@@ -90,3 +107,6 @@ function submitContactForm(e) {
   alert('Thank you! We will get back to you soon.');
   document.getElementById('contactForm').reset();
 }
+
+// DISPLAY ALL LISTINGS ON PAGE LOAD
+displayListings(listings);
